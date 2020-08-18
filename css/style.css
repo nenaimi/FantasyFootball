@@ -10827,6 +10827,10 @@ form.user .btn-user {
   width: 12.5rem;
 }
 
+#leagueID {
+text-align: center;
+}
+
 @-webkit-keyframes noise-anim {
   0% {
     clip: rect(78px, 9999px, 4px, 0);
