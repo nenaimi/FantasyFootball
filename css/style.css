@@ -48,9 +48,16 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
+  font-size: 13px;
   margin: 4px 2px;
   border-radius: 20px;
+}
+
+card-body .matchup {
+  display:inline;
+  position: relative;
+  box-sizing: border-box;
+
 }
 
 *,
