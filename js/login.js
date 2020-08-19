@@ -18,6 +18,7 @@
   firebase.auth().onAuthStateChanged(function(user){
       
       if(user){
+          // Successful signin
         window.location.href = "../index.html"   
       }
 
