@@ -11,7 +11,8 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+
+
 
 
 
@@ -28,8 +29,6 @@
       }
   });
 
-
-  
   function login(){
   
     var userEmail = document.getElementById("InputEmail").value;
@@ -47,9 +46,10 @@
         // ...
         });
     }
-  
+
+
   }
-  
+
   function logout(){
     firebase.auth().signOut().then(function() {
         // Sign-out successful.
@@ -57,6 +57,8 @@
         // An error happened.
       });
   }
+
+  
 
   firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
   .then(function() {
