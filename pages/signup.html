@@ -19,7 +19,7 @@
   <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <script type="text/javascript" src="../js/login.js"></script>
+  <script type="text/javascript" src="../js/signup.js"></script>
 
 
 </head>
@@ -33,24 +33,19 @@
     <div class="container">
       <div class="row">
 
-        <h2>LOGIN</h2>
-        <form class="login">
+        <h2>Register new account</h2>
+        <form class="signup">
 
-          <input type="email" id="email" placeholder="Enter Email Address...">
-
-
-          <input type="password" id="password" placeholder="Password">
+          <input type="email" id= "emailSignUp" placeholder="Enter Email Address...">
 
 
-          <div id="loginBtn" onclick="login()" class="button-center">
-            Login
+          <input type="password" id= "passwordSignUp" placeholder="Password">
+
+
+          <div id="signUpBtn" onclick="signup()" class="button-center">
+            Sign up
           </div>
         </form>
-
-          <a href="forgot-password.html">Forgot Password?</a>
-
-          <a href="signup.html">Create an Account</a>
-
       </div>
     </div>
   </div>

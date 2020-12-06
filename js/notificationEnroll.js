@@ -19,7 +19,7 @@ function enrollNumber(){
         headers: {
           "Content-Type": "application/json",
         },
-        //Just joking
+     
         body: JSON.stringify({ to: number, body: "You have successfully registered to receieve updates!" }),
       });
 

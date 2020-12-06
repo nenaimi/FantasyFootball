@@ -1,3 +1,5 @@
+  console.log("hi");
+  
   // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyA4qsMPbsZ3UDWe40ChANY_OCmJXT5vXww",
@@ -31,8 +33,8 @@
 
   function login(){
   
-    var userEmail = document.getElementById("InputEmail").value;
-    var userPass = document.getElementById("InputPassword").value;
+    var userEmail = document.getElementById("email").value;
+    var userPass = document.getElementById("password").value;
     console.log(userEmail + " " + userPass);
   
     if(userEmail != "" && userPass != ""){
