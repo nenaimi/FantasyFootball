@@ -182,3 +182,4 @@ var myDrop = new drop({
     selector:  '#myMulti2'
  });
   myDrop2.toggle();
+

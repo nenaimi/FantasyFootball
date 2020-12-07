@@ -8,7 +8,8 @@
   <meta name="description" content="Login Page">
   <title> Fantasy Football Login</title>
   <link type="text/css" href="../css/style.css" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
@@ -18,7 +19,7 @@
   <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://kit.fontawesome.com/ba551884d1.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ba551884d1.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -28,7 +29,6 @@
   <h4> FANTASY FOOTBALL </h4>
 
   <ul>
-
     <button onclick="location.href='index.html'"><i class="fa fa-home"></i></button>
     <button class="button"><a href="myTeam.html"> MY TEAM </a></button>
     <button class="button"><a href="news.html"> NEWS </a></button>
@@ -41,11 +41,24 @@
 
 <body>
 
-  <div class="news-container">
-    <h2 class="title">NEWS</h2>
-    <img src="../images/the_rundown.png" alt="The Rundown" style="width:340px;object-fit:contain; display:flex; margin: 0 auto;">
+  <!-- content -->
+  <div class="button-card">
+    <a href="joinNewPage.html">
+      <div class="white-card b-green">
+        <p>CREATE NEW LEAGUE</p>
+      </div>
+    </a>
+
+    <a href="joinNewPage.html">
+      <div class="white-card b-green">
+        <p>JOIN NEW</p>
+      </div>
+    </a>
+
   </div>
+
 
 </body>
 
 </html>
+
