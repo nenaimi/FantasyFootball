@@ -2,15 +2,15 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <!--kept this jquery tag at the top to ensure it loads first-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Login Page">
   <title> Fantasy Football Login</title>
   <link type="text/css" href="../css/style.css" rel="stylesheet">
-  <link type="text/css" href="../css/dropdown.css" rel="stylesheet">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <script src="https://kit.fontawesome.com/yourcode.js"></script>
   <script src="../js/settings.js"> </script>
 
 
@@ -23,6 +23,7 @@
   <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+  <script type="text/javascript" src="../js/login.js"></script>
 
 
 </head>
@@ -31,10 +32,8 @@
   <div class="container">
 
     <h2>SETTINGS</h2>
-    <form class="login">
-
       <label> Set Phone Number: </label>
-      <input type="tel" placeholder="Enter Phone Number...">
+      <input type="tel" id="phoneNumber" placeholder="Enter Phone Number...">
 
       <label> Set Email: </label>
       <input type="email" placeholder="Email">
@@ -46,58 +45,23 @@
       <label> Enable Email Notifications? <input type="checkbox" id="emailCheckbox" onclick="displayDropdown()"> </label>
       <br>
 
-      <br>
+      <div id="dropdown" style="display: none;">
+      <label>Select Team</label>
+            <select id="TeamNames" class="custom-select">
+                <option value="default"></option>
+                <option value="detroitLions">Detroit Lions</option>
+                <option value="arizonaCardinals">Arizona Cardinals</option>
+                <option value="dallasCowboys">Dallas Cowboys</option>
+            </select>
+            <label>Select Player</label>
+            <select id="PlayerNames" class="custom-select"></select>
+            <div onclick="submit()" class="button-center">
+              submit
+            </div>
+      </div>
 
-        <label> Choose team and players to get notifications about: </label>
-
-        <section>
-          <label> Team: </label>
-          <select multiple="multiple" id="myMulti">
-            <option>Philadelphia Eagles</option>
-            <option>Indianapolis Colts</option>
-            <option>New York Giants</option>
-            <option>Denver Broncos</option>
-            <option>Dallas Cowboys</option>
-            <option>Buffalo Bills</option>
-            <option>Baltimore Ravens</option>
-            <option>Dallas Cowboys</option>
-
-          </select>
-        </section>
-
-        <section>
-          <label> Players: </label>
-          <select multiple="multiple" id="myMulti2">
-            <option>David Johnson</option>
-
-            <option>Mark Ingram</option>
-            <option>Alexander Mattison</option>
-            <option>Chris Carson</option>
-
-
-            <option>Kevin Zeitler</option>
-            <option>Tanner Volson</option>
-            <option>Isaac Yiadom</option>
-            <option>Reggie White Jr.</option>
-            <option>Usman Williams</option>
-            <option>Nate Wozniak</option>
-            <option>Andrew Thomas</option>
-            <option>Levine Toilolo</option>
-          </select>
-        </section>
-        
-          <br>
-
-          <div class="button-center">
-            <a href="index.html" style="color:#290302;">Submit</a>
-          </div>
-    </form>
-    <a href="index.html">Cancel</a>
   </div>
 
-
-
-<script src="../js/index.js"> </script>
 </body>
 
 </html>

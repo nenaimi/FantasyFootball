@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Login Page">
   <title> Fantasy Football Login</title>
-  <link type="text/css" href="css/style.css" rel="stylesheet">
+  <link type="text/css" href="../css/style.css" rel="stylesheet">
 
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -19,7 +19,7 @@
   <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <script type="text/javascript" src="../js/login.js"></script>
+  <script type="text/javascript" src="/js/login.js"></script>
 
 
 </head>
@@ -28,33 +28,28 @@
   <h1>FANTASY FOOTBALL</h1>
 </div>
 
-<br>
-
 <body>
   <div id="footer">
-    <div class="container" style="min-height:335px;">
+    <div class="container">
+      <div class="row">
 
         <h2>LOGIN</h2>
-        <br>
         <form class="login">
 
-          <input type="email" placeholder="Enter Email Address...">
+          <input type="email" id="email" placeholder="Enter Email Address...">
 
-          <br>
-          <br>
-          <input type="password" placeholder="Password">
 
-          <a href="pages/index.html">
+          <input type="password" id="password" placeholder="Password">
           <div id="loginBtn" onclick="login()" class="button-center">
-             Login
+            Login
           </div>
-          </a>
         </form>
-
+     
           <a href="forgot-password.html">Forgot Password?</a>
 
-          <a href="register.html">Create an Account</a>
+          <a href="pages/signup.html">Create an Account</a>
 
+      </div>
     </div>
   </div>
 
