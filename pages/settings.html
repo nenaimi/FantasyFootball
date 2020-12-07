@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <!--kept this jquery tag at the top to ensure it loads first-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,6 +13,7 @@
   <script src="https://kit.fontawesome.com/yourcode.js"></script>
   <script src="../js/settings.js"> </script>
 
+<<<<<<< Updated upstream
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
@@ -24,6 +27,8 @@
   <script type="text/javascript" src="../js/login.js"></script>
 
 
+=======
+>>>>>>> Stashed changes
 </head>
 
 <body>
@@ -33,7 +38,7 @@
     <form class="login">
 
       <label> Set Phone Number: </label>
-      <input type="tel" placeholder="Enter Phone Number...">
+      <input type="tel" id="phoneNumber" placeholder="Enter Phone Number...">
 
       <label> Set Email: </label>
       <input type="email" placeholder="Email">
@@ -45,6 +50,7 @@
       <label> Enable Email Notifications? <input type="checkbox" id="emailCheckbox" onclick="displayDropdown()"> </label>
       <br>
 
+<<<<<<< Updated upstream
       <div id="dropdown" style="display:none;">
         <label> Choose team and players to get notifications about: </label>
         <select>
@@ -73,6 +79,32 @@
 
   </div>
 
+=======
+      <br>
+      <div id="dropdown" hidden>
+        <label> Choose team and players to get notifications about: </label>
+        <form id="dynamic">
+          <label>Select Team</label>
+          <select id="TeamNames" class="custom-select">
+              <option value="default"></option>
+              <option value="detroitLions">Detroit Lions</option>
+              <option value="arizonaCardinals">Arizona Cardinals</option>
+              <option value="dallasCowboys">Dallas Cowboys</option>
+          </select>
+
+          <label>Select Player</label>
+          <select id="PlayerNames" class="custom-select"></select>
+          <div class="button-center" onclick="submit()">
+            Submit
+         </div>
+      </form>
+    </div>
+
+    <a href="index.html">Cancel</a>
+  </div>
+
+
+>>>>>>> Stashed changes
 </body>
 
 </html>

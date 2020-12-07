@@ -1,4 +1,5 @@
 .vercel
+<<<<<<< Updated upstream
 node_modules/.bin/semver
 node_modules/.bin/semver.cmd
 node_modules/.package-lock.json
@@ -70,3 +71,10 @@ node_modules/debug/LICENSE
 node_modules/pop-iterate/.npmignore
 *.txt
 *.bnf
+=======
+>>>>>>> Stashed changes
+node_modules/twilio/CHANGES.md
+node_modules/twilio/lib/rest/sync/v1/service/syncStream.js
+node_modules/twilio/lib/rest/api/v2010/account/call.d.ts
+node_modules/twilio/lib/rest/api/v2010/account/call.d.ts
+node_modules/twilio/lib/rest/api/v2010/account/call.d.ts
