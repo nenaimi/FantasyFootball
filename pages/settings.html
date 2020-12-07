@@ -32,8 +32,6 @@
   <div class="container">
 
     <h2>SETTINGS</h2>
-    <form class="login">
-
       <label> Set Phone Number: </label>
       <input type="tel" id="phoneNumber" placeholder="Enter Phone Number...">
 
@@ -47,31 +45,20 @@
       <label> Enable Email Notifications? <input type="checkbox" id="emailCheckbox" onclick="displayDropdown()"> </label>
       <br>
 
-      <div id="dropdown" style="display:none;">
-        <label> Choose team and players to get notifications about: </label>
-        <select>
-          <option> Team </option>
-          <option> option1 </option>
-          <option> option1 </option>
-          <option> option1 </option>
-          <option> option1 </option>
-        </select>
+      <div id="dropdown" style="display: none;">
+      <label>Select Team</label>
+            <select id="TeamNames" class="custom-select">
+                <option value="default"></option>
+                <option value="detroitLions">Detroit Lions</option>
+                <option value="arizonaCardinals">Arizona Cardinals</option>
+                <option value="dallasCowboys">Dallas Cowboys</option>
+            </select>
+            <label>Select Player</label>
+            <select id="PlayerNames" class="custom-select"></select>
+            <div onclick="submit()" class="button-center">
+              submit
+            </div>
       </div>
-
-      <br>
-      
-      <div>
-        <label> Choose team and players to get notifications about: </label>
-        <select>
-          <option> Player </option>
-          <option> option1 </option>
-          <option> option1 </option>
-          <option> option1 </option>
-          <option> option1 </option>
-        </select>
-      </div>
-
-    </form>
 
   </div>
 
