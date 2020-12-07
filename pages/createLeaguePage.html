@@ -1,68 +1,75 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>Fantasy Football Create League</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Login Page">
+  <title> Fantasy Football Login</title>
+  <link type="text/css" href="../css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
-    <!-- Custom fonts for this template-->
-    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
 
-    <!-- Custom styles for this template-->
-    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
-    <link type="text/css" href="../css/style.css" rel="stylesheet">
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/ba551884d1.js" crossorigin="anonymous"></script>
 
-  </head>
-  <body>
-    <!-- Topbar -->
-    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-      <!-- Topbar Navbar -->
-      <ul class="navbar-nav ml-auto">
-          <button class="btn btn-link d-md-none rounded-circle mr-3" onclick="location.href='../index.html'"><i class="fa fa-home"></i></button>
-          <button class="button"><a href="../pages/myTeam.html"> MY TEAM </a></button>
-          <button class="button"><a href="../pages/news.html"> NEWS </a></button>
-          <button class="button"><a href="../pages/scoreboard.html">SCOREBOARD</a></button>
-      </ul>
-    </nav>
-      <!-- End of Topbar -->
+</head>
 
-    <!-- Begin Page Content -->
-    <div class="container-fluid">
-      <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <div class="card-header py-3">
-          <h1 class="h3 mb-0 text-gray-800"> Create a League </h1>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="text-xs font-weight-bold text-primary mb-1">
-          <h4 class = "h5 mb-0 text-gray-800"> League Name (required) </h4>
-          <form class="form-inline mr-auto w-100 navbar-search">
-            <div class = "input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder = "Enter league name">
-            </div>
-        </div>
+<!-- Topbar -->
+<nav id="nav">
+  <!-- Topbar Navbar -->
+  <h4> FANTASY FOOTBALL </h4>
 
-        <div class="text-xs font-weight-bold text-primary mb-1">
-          <h4 class = "h5 mb-0 text-gray-800"> How many players? </h4>
-            <a href ="#" class="btn btn-primary btn-circle"> 8 </a>
-            <a href ="#" class="btn btn-success btn-circle"> 10 </a>
-            <a href ="#" class="btn btn-info btn-circle"> 12 </a>
-            <a href ="#" class="btn btn-warning btn-circle"> 14 </a>
-            <a href ="#" class="btn btn-danger btn-circle"> 16 </a>
-        </div>
-        <br>
-        <br>
-        <div class ="col-lg-6">
-           <a href="./leagueInfo.html" class="btn btn-primary btn-user btn-block">
-             Continue
-           </a>
-        </div>
-      </div>
-    </div>
-  </body>
+  <ul>
+    <button onclick="location.href='index.html'"><i class="fa fa-home"></i></button>
+    <button class="button"><a href="myTeam.html"> MY TEAM </a></button>
+    <button class="button"><a href="news.html"> NEWS </a></button>
+    <button class="button"><a href="scoreboard.html">SCOREBOARD</a></button>
+  </ul>
+</nav>
+<!-- End of Topbar -->
+
+<br>
+
+<body>
+
+  <!-- content -->
+  <div class="joinNewContainer">
+    <h2>JOIN NEW LEAGUE</h2>
+    <form>
+
+      <label> League Name: </label>
+      <input type="tel" placeholder="Enter League Name...">
+
+      <label> Annual Player Draft: </label>
+      <input type="date" placeholder="Email">
+
+      <label> Number of Players: </label>
+
+      <section>
+        <select>
+          <option>8</option>
+          <option>10</option>
+          <option>12</option>
+          <option>14</option>
+          <option>16</option>
+        </select>
+      </section>
+      <br>
+          <div class="button-center">
+            <a href="confirmNewLeague.html" style=" text-decoration:none; color:#290302;">CREATE</a>
+          </div>
+    </form>
+  </div>
+
+</body>
+
 </html>

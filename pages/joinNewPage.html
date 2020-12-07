@@ -10,6 +10,7 @@
   <link type="text/css" href="../css/style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<script src="../js/joinNewPage.js"></script>
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
@@ -43,29 +44,17 @@
 
   <!-- content -->
   <div class="joinNewContainer">
-    <h2>CREATE NEW LEAGUE</h2>
+    <h2>JOIN NEW LEAGUE</h2>
+    <p id="successMsg" style="display:none;">League Joined Successfully!</p>
     <form>
 
-      <label> League Name: </label>
-      <input type="tel" placeholder="Enter League Name...">
+      <label> League Invite Code: </label>
+      <input type="text" placeholder="Enter Code...">
 
-      <label> Annual Player Draft: </label>
-      <input type="date" placeholder="Email">
-
-      <label> Number of Players: </label>
-
-      <section>
-        <select>
-          <option>8</option>
-          <option>10</option>
-          <option>12</option>
-          <option>14</option>
-          <option>16</option>
-        </select>
-      </section>
+     
       <br>
           <div class="button-center">
-            <a href="confirmNewLeague.html" style=" text-decoration:none; color:#290302;">CREATE</a>
+            <a id="joinLeagueButton" onclick="displayMsg()" style=" text-decoration:none; color:#290302;">JOIN</a>
           </div>
     </form>
   </div>
