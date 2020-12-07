@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Login Page">
+  <title> Fantasy Football Login</title>
+  <link type="text/css" href="../css/style.css" rel="stylesheet">
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/ba551884d1.js" crossorigin="anonymous"></script>
+
+</head>
+
+<!-- Topbar -->
+<nav id="nav">
+  <!-- Topbar Navbar -->
+  <h4> FANTASY FOOTBALL </h4>
+
+  <ul>
+
+    <button onclick="location.href='../index.html'"><i class="fa fa-home"></i></button>
+    <button class="button"><a href="myTeam.html"> MY TEAM </a></button>
+    <button class="button"><a href="news.html"> NEWS </a></button>
+    <button class="button"><a href="scoreboard.html">SCOREBOARD</a></button>
+  </ul>
+</nav>
+<!-- End of Topbar -->
+
+<br>
+
+<body>
+  <h2 class="title">PLAYER NEWS</h2>
+  <div class="news-container">
+    <!-- First card -->
+    <div class="news-card" style="border-bottom:solid 0.1px; border-color:#adadad; display:block;">
+      <div class="image" style="float: left; margin: 0px 15px 15px 0px;">
+        <img src="../images/2513 david johnson.png" alt="David Johnson" style="border-radius:50px;">
+      </div>
+      <div class="card-text" style="color:#adadad; font-size:13px;">
+        <p>Texans activate <strong>David Johnson</strong> from injured reserve </p>
+        <p class="subtext" style="font-size:10px;"> Yahoo! | 2 hours ago </p>
+      </div>
+    </div>
+    <!-- Second card -->
+    <div class="news-card" style="border-bottom:solid 0.1px; border-color:#adadad; display:block;">
+      <div class="image" style="float: left; margin: 0px 15px 15px 0px;">
+        <img src="../images/mark ingram.png" alt="Mark Ingram" style="border-radius:50px;">
+      </div>
+      <div class="card-text" style="color:#adadad; font-size:13px;">
+        <p><strong>Mark Ingram</strong> added to Ravens’ no-play COVID list</p>
+        <p class="subtext" style="font-size:10px;"> Bob Condotta | yesterday </p>
+      </div>
+    </div>
+    <!-- Third card -->
+    <div class="news-card" style="border-bottom:solid 0.1px; border-color:#adadad; display:block;">
+      <div class="image" style="float: left; margin: 0px 15px 15px 0px;">
+        <img src="../images/Alexander Mattison.png" alt="Alexander Mattison" style="border-radius:50px;">
+      </div>
+      <div class="card-text" style="color:#adadad; font-size:13px;">
+        <p><strong>Alexander Mattison</strong> (knee/foot) questionable for Week 7</p>
+        <p class="subtext" style="font-size:10px;"> Jaguars-Twitter | 5 hours ago </p>
+      </div>
+    </div>
+    <!-- Fourth card -->
+    <div class="news-card" style="border-bottom:solid 0.1px; border-color:#adadad; display:block;">
+      <div class="image" style="float: left; margin: 0px 15px 15px 0px;">
+        <img src="../images/Michael Thomas.png" alt="Michael Thomas" style="border-radius:50px;">
+      </div>
+      <div class="card-text" style="color:#adadad; font-size:13px;">
+        <p>Michael Thomas placed on <strong>Colts'</strong> COVID list, will not play in Week 7</p>
+        <p class="subtext" style="font-size:10px;"> Indianapolis Colts-Twitter | yesterday </p>
+      </div>
+    </div>
+
+    <!-- Fifth card -->
+    <div class="news-card" style="border-bottom:solid 0.1px; border-color:#adadad; display:block;">
+      <div class="image" style="float: left; margin: 0px 15px 15px 0px;">
+        <img src="../images/chris carson.png" alt="Chris Carson" style="border-radius:50px;">
+      </div>
+      <div class="card-text" style="color:#adadad; font-size:13px;">
+        <p><strong>Chris Carson</strong> "definitely" returning for practice, will play week 12</p>
+        <p class="subtext" style="font-size:10px;"> Andrews Schefter | Dec 02 </p>
+      </div>
+    </div>
+
+    <!-- Sixth card -->
+    <div class="news-card" style="border-bottom:solid 0.1px; border-color:#adadad; display:block;">
+      <div class="image" style="float: left; margin: 0px 15px 15px 0px;">
+        <img src="../images/jordan howard.png" alt="Jordan Howard" style="border-radius:50px;">
+      </div>
+      <div class="card-text" style="color:#adadad; font-size:13px;">
+        <p><strong>Eagles</strong> elevate Jordan Howard to active roster for Week 13</p>
+        <p class="subtext" style="font-size:10px;"> Ian Rapoport | Dec 05 </p>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

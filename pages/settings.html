@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Login Page">
+  <title> Fantasy Football Login</title>
+  <link type="text/css" href="../css/style.css" rel="stylesheet">
+  <link type="text/css" href="../css/dropdown.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <script src="../js/settings.js"> </script>
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+  <div class="container">
+
+    <h2>SETTINGS</h2>
+    <form class="login">
+
+      <label> Set Phone Number: </label>
+      <input type="tel" placeholder="Enter Phone Number...">
+
+      <label> Set Email: </label>
+      <input type="email" placeholder="Email">
+
+      <label> Enable SMS Notifications?
+        <input type="checkbox" id="phoneCheckbox" onclick="displayDropdown()">
+      </label>
+
+      <label> Enable Email Notifications? <input type="checkbox" id="emailCheckbox" onclick="displayDropdown()"> </label>
+      <br>
+
+      <br>
+
+        <label> Choose team and players to get notifications about: </label>
+
+        <section>
+          <label> Team: </label>
+          <select multiple="multiple" id="myMulti">
+            <option>New York Giants</option>
+            <option>Denver Broncos</option>
+            <option>Dallas Cowboys</option>
+            <option>Buffalo Bills</option>
+            <option>Baltimore Ravens</option>
+            <option>Dallas Cowboys</option>
+
+          </select>
+        </section>
+
+        <section>
+          <label> Players: </label>
+          <select multiple="multiple" id="myMulti2">
+            <option>Player1</option>
+            <option>Player2</option>
+            <option>Player3</option>
+          </select>
+        </section>
+        
+          <br>
+
+          <div class="button-center">
+            <a href="index.html" style="color:#290302;">Submit</a>
+          </div>
+    </form>
+    <a href="index.html">Cancel</a>
+  </div>
+
+
+
+<script src="../js/index.js"> </script>
+</body>
+
+</html>

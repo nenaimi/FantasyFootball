@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Login Page">
+  <title> Fantasy Football Login</title>
+  <link type="text/css" href="../css/style.css" rel="stylesheet">
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/ba551884d1.js" crossorigin="anonymous"></script>
+
+</head>
+
+<!-- Topbar -->
+<nav id="nav">
+  <!-- Topbar Navbar -->
+  <h4> FANTASY FOOTBALL </h4>
+
+  <ul>
+
+    <button onclick="location.href='../index.html'"><i class="fa fa-home"></i></button>
+    <button class="button"><a href="myTeam.html"> MY TEAM </a></button>
+    <button class="button"><a href="news.html"> NEWS </a></button>
+    <button class="button"><a href="scoreboard.html">SCOREBOARD</a></button>
+  </ul>
+</nav>
+<!-- End of Topbar -->
+
+<br>
+
+<body>
+  <h2 class="title">WATCH LIVE</h2>
+
+  <div class="nfl-watch-live">
+    <div class="video">
+      <iframe width="344" height="202" src="https://www.youtube.com/embed/QNAKgF-n8SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p> UP NEXT </p>
+
+    <div class="slider-container">
+      <div class="slider">
+
+        <div class="slides">
+
+          <div id="slide-1">
+            <h6 style="color:#757575; font-size: 18px; padding:0px;text-align:left;"> NFL LIVE </h6>
+            <h6> David Johnson (concussion) </h6>
+            <h6 style="text-align:left; padding-top:0px; padding-bottom:0px;"> | Week 6 </h6>
+            <img src="../images/video1.jpg" alt="Video 1">
+          </div>
+
+          <div id="slide-2">
+            <h6 style="color:#757575; font-size: 18px; padding:0px;text-align:left;"> NFL LIVE </h6>
+            <h6 style="text-align:left;"> Michael F. Florio's deep </h6>
+            <h6 style="text-align:left; padding-top:0px; padding-bottom:0px;">sleeper for Week 7</h6>
+            <img src="../images/video2.jpg" alt="Video 2">
+          </div>
+
+          <div id="slide-3">
+            <h6 style="color:#757575; font-size: 18px; padding:0px;text-align:left;"> YAHOO! </h6>
+            <h6 style="text-align:left;"> Fans breakup their lineup</h6>
+            <h6 style="text-align:left; padding-top:0px; padding-bottom:0px;"> for Week 7</h6>
+            <img src="../images/video3.jpg" alt="Video 3">
+          </div>
+
+          <div id="slide-4">
+            <h6 style="color:#757575; font-size: 18px; padding:0px;text-align:left;"> ESPN </h6>
+            <h6 style="text-align:left;"> Dwayde Johnson no longer</h6>
+            <h6 style="text-align:left; padding-top:0px; padding-bottom:0px;">playing (illness)</h6>
+            <img src="../images/video4.jpg" alt="Video 4">
+          </div>
+
+          <div id="slide-5">
+            <h6 style="color:#757575; font-size: 18px; padding:0px;text-align:left;"> ESPN </h6>
+            <h6 style="text-align:left; padding-top:0px; padding-bottom:30px;"> Sneaky Starts: Week 13</h6>
+            <img src="../images/video5.jpg" alt="Video 5">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <p style="font-family: 'Source Sans Pro'; font-size:20px; padding-bottom: 10px; border-bottom:solid 2px; border-color: #741C1B;"> Latest Updates </p>
+  </div>
+
+
+</body>
+
+</html>

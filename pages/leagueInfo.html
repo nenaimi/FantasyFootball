@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Login Page">
+  <title>Fantasy Football Team</title>
+  <!-- Custom fonts for this template-->
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+  <link type="text/css" href="../css/style.css" rel="stylesheet">
+  <script type="text/javascript" src="../js/leagueInfo.js"></script>
+
+
+</head>
+<body>
+  <!-- Topbar -->
+  <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+    <!-- Topbar Navbar -->
+    <ul class="navbar-nav ml-auto">
+        <button class="btn btn-link d-md-none rounded-circle mr-3" onclick="location.href='../index.html'"><i class="fa fa-home"></i></button>
+        <button class="button"><a href="../pages/myTeam.html"> MY TEAM </a></button>
+        <button class="button"><a href="../pages/news.html"> NEWS </a></button>
+        <button class="button"><a href="../pages/scoreboard.html">SCOREBOARD</a></button>
+    </ul>
+  </nav>
+    <!-- End of Topbar -->
+         <!-- League Invite Code Card -->
+         <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">League Invite Code</div>
+                    <h1 class="h3 mb-0 text-gray-800" id="leagueID" style="visibility: hidden;">blank</h1>
+                    <button class="btn btn-primary btn-user btn-block" id="btnGenerateID" onclick="generateLeagueID();">Generate</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- View League Teams Card-->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">View Teams</div>
+                    <a href="./leagueTeams.html" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Draft Card-->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">Draft Team</div>
+                    <a href="./draft.html" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+</body>
+</html>
