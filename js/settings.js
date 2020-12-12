@@ -46,6 +46,7 @@ function enrollNumber(){
   message = player + " from the " + team;
   console.log("clicked!")
   console.log(message);
+  console.log(number);
   const res = fetch("../api/sendMessage", {
       method: "POST",
       headers: {

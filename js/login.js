@@ -1,5 +1,3 @@
-console.log("hidddsdff");
-
 // Your web app's Firebase configuration
 var firebaseConfig = {
   apiKey: "AIzaSyA4qsMPbsZ3UDWe40ChANY_OCmJXT5vXww",

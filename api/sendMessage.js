@@ -1,9 +1,13 @@
+
+/* -----------------------Important--------------------------
+  -wont work unless you have twilio account and key
+  -message me and ill send it to you!
+  -limited on the amount of free uses we have left so im disabling it for now
+*/
 const client = require("twilio")(
-    'AC470dbd23e5513d87594e77557898f681',
-    '5c8acbb7ca618881d94f03f098f30584'
+    '',// account
+    '' // key
 );
-
-
 export default async (req, res) => {
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");
@@ -14,6 +18,7 @@ export default async (req, res) => {
       body: req.body.body,
     })
     .then(() => {
+      console.log("success");
       res.send(JSON.stringify({ success: true }));
     })
     .catch((err) => {
@@ -21,3 +26,4 @@ export default async (req, res) => {
       res.send(JSON.stringify({ success: false }));
     });
   };  
+
