@@ -5104,7 +5104,7 @@ $jscomp.polyfill = function (e, r, p, m) {
     Waves.displayEffect();
   }, false);
 })(window);
-;(function ($, anim) {
+(function ($, anim) {
   'use strict';
 
   var _defaults = {
