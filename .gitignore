@@ -78,3 +78,4 @@ node_modules/twilio/lib/rest/sync/v1/service/syncStream.js
 node_modules/twilio/lib/rest/api/v2010/account/call.d.ts
 node_modules/twilio/lib/rest/api/v2010/account/call.d.ts
 node_modules/twilio/lib/rest/api/v2010/account/call.d.ts
+.DS_Store

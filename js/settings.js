@@ -6,6 +6,7 @@ var teams={
 }
 
 
+
 $(document).ready(function () {
   $('#TeamNames').on('change', function() {
       $('#PlayerNames').html(
@@ -55,3 +56,4 @@ function enrollNumber(){
       body: JSON.stringify({ to: number, body: "You have successfully registered to receieve updates about " + message}),
     });
 }
+

@@ -1,67 +1,70 @@
+Skip to content Search or jump to… Pulls Issues Marketplace Explore @nickmallare
+nenaimi / FantasyFootball 1 00 Code Issues Pull requests Actions Projects Wiki
+More FantasyFootball/pages/settings.html @nickmallare nickmallare fixed some
+issues from previous merge Latest commit 9bd72c7 5 days ago History 2
+contributors @nenaimi@nickmallare 67 lines (51 sloc) 2.42 KB
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <!--kept this jquery tag at the top to ensure it loads first-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Login Page" />
+    <title>Fantasy Football Login</title>
+    <link type="text/css" href="../css/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <script src="../js/settings.js"></script>
 
-<head>
-  <!--kept this jquery tag at the top to ensure it loads first-->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Login Page">
-  <title> Fantasy Football Login</title>
-  <link type="text/css" href="../css/style.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/yourcode.js"></script>
-  <script src="../js/settings.js"> </script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
 
-
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
+    <!-- TODO: Add SDKs for Firebase products that you want to use
       https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <script type="text/javascript" src="../js/login.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+  </head>
 
-
-</head>
-
-<body>
-  <div class="container">
-
-    <h2>SETTINGS</h2>
+  <body>
+    <div class="container">
+      <h2>SETTINGS</h2>
       <label> Set Phone Number: </label>
-      <input type="tel" id="phoneNumber" placeholder="Enter Phone Number...">
+      <input type="tel" id="phoneNumber" placeholder="Enter Phone Number..." />
 
       <label> Set Email: </label>
-      <input type="email" placeholder="Email">
+      <input type="email" placeholder="Email" />
 
-      <label> Enable SMS Notifications?
-        <input type="checkbox" id="phoneCheckbox" onclick="displayDropdown()">
+      <label>
+        Enable SMS Notifications?
+        <input type="checkbox" id="phoneCheckbox" onclick="displayDropdown()" />
       </label>
 
-      <label> Enable Email Notifications? <input type="checkbox" id="emailCheckbox" onclick="displayDropdown()"> </label>
-      <br>
+      <label>
+        Enable Email Notifications?
+        <input type="checkbox" id="emailCheckbox" onclick="displayDropdown()" />
+      </label>
+      <br />
 
-      <div id="dropdown" style="display: none;">
-      <label>Select Team</label>
-            <select id="TeamNames" class="custom-select">
-                <option value="default"></option>
-                <option value="detroitLions">Detroit Lions</option>
-                <option value="arizonaCardinals">Arizona Cardinals</option>
-                <option value="dallasCowboys">Dallas Cowboys</option>
-            </select>
-            <label>Select Player</label>
-            <select id="PlayerNames" class="custom-select"></select>
-            <div onclick="submit()" class="button-center">
-              submit
-            </div>
+      <div id="dropdown" style="display: none">
+        <label>Select Team</label>
+        <select id="TeamNames" class="custom-select">
+          <option value="default"></option>
+          <option value="detroitLions">Detroit Lions</option>
+          <option value="arizonaCardinals">Arizona Cardinals</option>
+          <option value="dallasCowboys">Dallas Cowboys</option>
+        </select>
+        <label>Select Player</label>
+        <select id="PlayerNames" class="custom-select"></select>
+        <div onclick="submit()" class="button-center">submit</div>
       </div>
-
-  </div>
-
-</body>
-
+    </div>
+  </body>
 </html>
