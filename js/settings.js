@@ -1,22 +1,93 @@
 var teams = {
   detroitLions: [
     "Matt Stafford",
-    "Marvin Jones",
+    "D'Andre Swift",
+    "Adrian Peterson",
     "Danny Amendola",
-    "Desmond Trufant",
+    "Adrian Peterson",
+    "Marvin Jones",
+    "T.J. Hockenson",
+    "Kenny Golladay",
   ],
   arizonaCardinals: [
     "Kyle Murray",
-    "DeAndre Hopkins",
+    "Kenyan Drake",
     "Larry Fitzgerald Jr.",
-    "Patrick Peterson",
+    "Chase Edmonds",
+    "DeAndre Hopkins",
+    "Christian Kirk",
+    "Dan Arnold",
   ],
   dallasCowboys: [
     "Dak Prescott",
+    "Garrett Gilbert",
+    "Tony Pollard",
+    "Rico Dowdle",
+    "Amari Cooper",
     "CeeDee Lamb",
-    "Exekiel Elliott",
-    "Aldon Smith",
+    "Michael Gallup",
+    "Dalton Schultz",
   ],
+  philadelphiaEagles: [
+    "Jalen Hurts",
+    "Carson Wentz",
+    "Miles Sanders",
+    "Boston Scott",
+    "Travis Fulgham",
+    "Greg Ward",
+    "Richard Rodgers",
+    "Dallas Goedert",
+  ],
+  seattleSeahawks: [
+    "Russell Wilson",
+    "Chris Carson",
+    "Alex Collins",
+    "D.K. Metcalf",
+    "Tyler Lockett",
+    "David Moore",
+    "Greg Olsen",
+  ],
+  sanFranciso: [
+    "Nick Mullens",
+    "Jimmy Garoppolo",
+    "Kyle Juszczyk",
+    "JaMycal Hasty",
+    "Brandon Aiyuk",
+    "George Kittle",
+    "Kendrick Bourne",
+    "Deebo Samuel",
+  ],
+  greenBayPackers: [
+    "Aaron Rodgers",
+    "Tim Boyle",
+    "Aaron Jones",
+    "Jamaal Williams",
+    "Davante Adams",
+    "Robert Tonyan",
+    "Marquez Valdes-Scantling",
+    "Allen Lazard",
+  ],
+  baltimoreRavens: [
+    "Lamar Jackson",
+    "Trace McSorley",
+    "Gus Edwards",
+    "J.K. Dobbins",
+    "Mark Andrews",
+    "Marquise Brown",
+    "Willie Snead",
+    "Miles Boykin",
+  ],
+  newYorkGiants: [
+    "Daniel Jones",
+    "Colt McCoy",
+    "Wayne Gallman",
+    "Alfred Morris",
+    "Darius Slayton",
+    "Evan Engram",
+    "Sterling Shepard",
+    "Golden Tate",
+  ]
+
 };
 
 $(document).ready(function () {
@@ -72,10 +143,8 @@ function enrollNumber() {
   number = "+1" + number;
   player = $("#PlayerNames option:selected").text();
   team = $("#TeamNames option:selected").text();
+  category = $("#Category option:selected").text();
   message = player + " from the " + team;
-  console.log("clicked!");
-  console.log(message);
-  console.log(number);
   const res = fetch("../api/sendMessage", {
     method: "POST",
     headers: {
@@ -85,7 +154,7 @@ function enrollNumber() {
     body: JSON.stringify({
       to: number,
       body:
-        "You have successfully registered to receieve updates about " + message,
+      "You have successfully registered to receieve updates about " + message + " for " + category + " events.",
     }),
   });
 
@@ -98,6 +167,7 @@ function enrollEmail() {
   var email = document.getElementById("email").value;
   player = $("#PlayerNames option:selected").text();
   team = $("#TeamNames option:selected").text();
+  category = $("#Category option:selected").text();
   message = player + " from the " + team;
   const res = fetch("../api/sendEmail", {
     method: "POST",
@@ -107,7 +177,7 @@ function enrollEmail() {
     body: JSON.stringify({
       to: email,
       body:
-        "You have successfully registered to receieve updates about " + message,
+        "You have successfully registered to receieve updates about " + message + " for " + category + " events.",
     }),
   });
   var successMsg = document.getElementById("successMsg");

@@ -53,14 +53,14 @@
     <!-- content -->
     <div id="menu">
     <ul>
-        <div id="noLeague">
+        <div id="noLeague" style="display: none;">
             <li class="gradient_bg2">
                 <a class="insidelink" >
                     <span>No Active Leagues</span> 
                 </a>
             </li>
             </div>
-        <div id="dropdown">
+        <div id="dropdown" style="display: none;">
         <li class="gradient_bg2" onclick="expandLeague()">
             <a class="insidelink">
                 <span>SD League Rankings</span> 
@@ -72,7 +72,7 @@
        
         <div style="display: none;" id ="rankings">
             <hr>
-            <li class="gradient_bg5"  id="teams">
+            <li class="gradient_bg5"  id="nurraTeam">
                 <a class="insidelink">
                 <span><i class="fas fa-medal"></i>  Nurra</span>
                 </a>
@@ -81,11 +81,18 @@
                         <span>5-0  </span>
                     </a>
                 </div>
-                
+            
             </li>
             <hr>
+            <li class="gradient_bg6" id="nurraPlayers" style="display: none;" >
+              <img src="../images/2513davidjohnson.png" alt="David Johnson" style="border-radius:50px;">
+              <img src="../images/AlexanderMattison.png" alt="Alexander Mattison" style="border-radius:50px;">
+              <img src="../images/chriscarson.png" alt="Chris Carson" style="border-radius:50px;">
+              <img src="../images/dandreswift.png" alt="Dandre Swift" style="border-radius:50px;">
+              <img src="../images/jjwatt.jpg" alt="JJ Watt" style="border-radius:50px;">
+          </li>
 
-            <li class="gradient_bg5" id="teams">
+            <li class="gradient_bg5" id="andrewTeam">
                 <a class="insidelink">
                     <span>Andrew</span>
                 </a>
@@ -96,8 +103,16 @@
                 </div>
             </li>
             <hr>
+            <li class="gradient_bg6" id="andrewPlayers" style="display: none;" >
+              <img src="../images/jordanhoward.png" alt="Jordan Howard" style="border-radius:50px;">
+              <img src="../images/markingram.png" alt="Mark Ingram" style="border-radius:50px;">
+              <img src="../images/MichaelThomas.png" alt="Michael Thomas" style="border-radius:50px;">
+              <img src="../images/mylesgaskin.png" alt="Myles Gaskin" style="border-radius:50px;">
+              <img src="../images/stafford.jpeg" alt="Matt Stafford" style="border-radius:50px;">
+          </li>
+          
 
-            <li class="gradient_bg5" id="teams">
+            <li class="gradient_bg5" id="shishirTeam">
                 <a class="insidelink">
                     <span>Shishir</span>
                 </a>
@@ -108,18 +123,32 @@
                 </div>
             </li>
             <hr>
-            <li class="gradient_bg5">
+            <li class="gradient_bg6" id="shishirPlayers" style="display: none;" >
+              <img src="../images/kenyanDrake.png" alt="Kenyan Drake" style="border-radius:50px;">
+              <img src="../images/jalenThompson.png" alt="Jalen Thompson" style="border-radius:50px;">
+              <img src="../images/tomBrady.png" alt="Tom Brady" style="border-radius:50px;">
+              <img src="../images/laSeanMccoy.png" alt="LaSean McCoy" style="border-radius:50px;">
+              <img src="../images/gronk.png" alt="Gronk" style="border-radius:50px;">
+          </li>
+            <li class="gradient_bg5" id="nickTeam">
                 <a class="insidelink">
                     <span>Nick</span>
                 </a>
                 <div style="float:right; margin-right: 10%;" >
                     <a class="insidelink">
-                        <span>5-0  </span>
+                        <span>0-5</span>
                     </a>
                 </div>
               </li>
+              <hr>
+              <li class="gradient_bg6" id="nickPlayers" style="display: none;" >
+                  <img src="../images/jerryJeudy.png" alt="Jerry Jeudy" style="border-radius:50px;">
+                  <img src="../images/melvinGordon.png" alt="Melvin Gordon" style="border-radius:50px;">
+                  <img src="../images/russellWilson.png" alt="Russell WIlson" style="border-radius:50px;">
+                  <img src="../images/djmetcalf.png" alt="D.J. Metcalf" style="border-radius:50px;">
+                  <img src="../images/joshJacobs.png" alt="Josh Jacobs" style="border-radius:50px;">
+              </li>
         </div>
-        <hr>
     </ul>
     </div>
   </body>
