@@ -50,9 +50,19 @@ function submit() {
   let phoneCheckbox = document.getElementById("phoneCheckbox");
   let emailCheckbox = document.getElementById("emailCheckbox");
   if (phoneCheckbox.checked) {
+    let phoneNumber = document.getElementById("phoneNumber");
+    if(phoneNumber.value === ""){
+      alert("Please provide a phonenumber");
+      return;
+    }
     enrollNumber();
   }
   if (emailCheckbox.checked) {
+    let emailInput = document.getElementById("email");
+    if(emailInput.value === ""){
+      alert("Please provide an email");
+      return;
+    }
     enrollEmail();
   }
 }
@@ -78,6 +88,9 @@ function enrollNumber() {
         "You have successfully registered to receieve updates about " + message,
     }),
   });
+
+  var successMsg = document.getElementById("successMsg");
+  successMsg.style.display = "block";
 }
 
 //todo
@@ -97,4 +110,6 @@ function enrollEmail() {
         "You have successfully registered to receieve updates about " + message,
     }),
   });
+  var successMsg = document.getElementById("successMsg");
+  successMsg.style.display = "block";
 }

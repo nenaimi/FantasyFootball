@@ -5,9 +5,11 @@
   -limited on the amount of free uses we have left so im disabling it for now
 */
 const client = require("twilio")(
-    //'',// account
-    //'' // key
+  '',// account
+  '' // key
 );
+
+
 export default async (req, res) => {
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");

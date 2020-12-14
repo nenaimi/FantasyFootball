@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Login Page" />
+    <title>Fantasy Football Login</title>
+    <link type="text/css" href="../css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../js/rankings.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ba551884d1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!-- Topbar -->
+  <nav id="nav">
+    <!-- Topbar Navbar -->
+    <h4>FANTASY FOOTBALL</h4>
+
+    <ul>
+      <button onclick="location.href='../pages'">
+        <i class="fa fa-home"></i>
+      </button>
+      <button class="button"><a href="myteam.html"> MY TEAM </a></button>
+      <button class="button"><a href="news.html"> NEWS </a></button>
+      <button class="button"><a href="scoreboard.html">SCOREBOARD</a></button>
+    </ul>
+  </nav>
+  <!-- End of Topbar -->
+
+  <br />
+
+  <body>
+    <!-- content -->
+    <div id="menu">
+    <ul>
+        <div id="noLeague">
+            <li class="gradient_bg2">
+                <a class="insidelink" >
+                    <span>No Active Leagues</span> 
+                </a>
+            </li>
+            </div>
+        <div id="dropdown">
+        <li class="gradient_bg2" onclick="expandLeague()">
+            <a class="insidelink">
+                <span>SD League Rankings</span> 
+                <i class="fas fa-angle-down fa-2x" style="float:right; margin-right: 10%;"></i>
+            </a>
+          </a>
+        </li>
+        </div>
+       
+        <div style="display: none;" id ="rankings">
+            <hr>
+            <li class="gradient_bg5"  id="teams">
+                <a class="insidelink">
+                <span><i class="fas fa-medal"></i>  Nurra</span>
+                </a>
+                <div style="float:right; margin-right: 10%;" >
+                    <a class="insidelink">
+                        <span>5-0  </span>
+                    </a>
+                </div>
+                
+            </li>
+            <hr>
+
+            <li class="gradient_bg5" id="teams">
+                <a class="insidelink">
+                    <span>Andrew</span>
+                </a>
+                <div style="float:right; margin-right: 10%;" >
+                    <a class="insidelink">
+                        <span>3-2</span>
+                    </a>
+                </div>
+            </li>
+            <hr>
+
+            <li class="gradient_bg5" id="teams">
+                <a class="insidelink">
+                    <span>Shishir</span>
+                </a>
+                <div style="float:right; margin-right: 10%;" >
+                    <a class="insidelink">
+                        <span>2-3</span>
+                    </a>
+                </div>
+            </li>
+            <hr>
+            <li class="gradient_bg5">
+                <a class="insidelink">
+                    <span>Nick</span>
+                </a>
+                <div style="float:right; margin-right: 10%;" >
+                    <a class="insidelink">
+                        <span>5-0  </span>
+                    </a>
+                </div>
+              </li>
+        </div>
+        <hr>
+    </ul>
+    </div>
+  </body>
+</html>
