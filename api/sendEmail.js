@@ -1,8 +1,9 @@
-const sgMail = require("@sendgrid/mail");
+
+export default async (req, res) => {
+  const sgMail = require("@sendgrid/mail");
 sgMail.setApiKey(
   ""
 );
-export default async (req, res) => {
   var message = "<strong>" + req.body.body + "</strong>";
   const msg = {
     to: req.body.to, // Change to your recipient

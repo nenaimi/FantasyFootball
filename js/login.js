@@ -16,17 +16,21 @@ firebase.initializeApp(firebaseConfig);
 function login() {
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
+  var invalid = document.getElementById("invalid");
+  
   console.log(email + " " + password);
 
   if (email != "" && password != "") {
     firebase.auth().signInWithEmailAndPassword(email, password)
   .then((user) => {
+    invalid.style.display = "none";
     window.location.href = "../pages"   
   })
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
     alert(errorMessage);
+    invalid.style.display = "block";
   });
   }
   

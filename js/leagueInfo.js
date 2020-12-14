@@ -7,13 +7,12 @@ function generateLeagueID() {
     var charactersLength = characters.length;
     var length = 5;
     var leagueID = document.getElementById("leagueID");
-    var btnGenerateID = document.getElementById("btnGenerateID");
 
     for ( var i = 0; i < length; i++ ) {
        result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
     
-    leagueID.innerHTML = result;
+    leagueID.value = result;
     leagueID.style = "visible";
 
     //Optional?

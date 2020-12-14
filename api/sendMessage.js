@@ -4,13 +4,13 @@
   -message me and ill send it to you!
   -limited on the amount of free uses we have left so im disabling it for now
 */
-const client = require("twilio")(
-  '',// account
-  '' // key
-);
 
 
 export default async (req, res) => {
+  const client = require("twilio")(
+    '',// account
+    '' // key
+  );
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");
     
