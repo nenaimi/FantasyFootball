@@ -126,7 +126,13 @@ function submit() {
       alert("Please provide a phonenumber");
       return;
     }
-    enrollNumber();
+    try {
+      console.log("enroll number");
+      enrollNumber();
+    } catch (error) {
+      console.log(error);
+    }
+  
   }
   if (emailCheckbox.checked) {
     let emailInput = document.getElementById("email");
@@ -134,7 +140,12 @@ function submit() {
       alert("Please provide an email");
       return;
     }
-    enrollEmail();
+    try {
+      console.log("enroll email")
+      enrollEmail();
+    } catch (error) {
+      console.log(error);
+    }
   }
 }
 
